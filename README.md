@@ -34,7 +34,13 @@ List the tools, libraries, and technologies (e.g., Python, SQL, Tableau, Power B
 ## Results
 Summarize the key findings and outcomes.
 
+## Sources
+[Weather Data: Government of Canada] (https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=49908) 
+
 ## How to Run the Project
 1. Clone the repository:
    ```bash
    git clone <repository-url>
+
+
+
