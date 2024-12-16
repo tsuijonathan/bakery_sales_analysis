@@ -5,7 +5,8 @@ USE veronicas_sales;
 -- Date Table
 CREATE TABLE Date (
 	date DATE PRIMARY KEY,
-    day VARCHAR(20)
+    day VARCHAR(20),
+    season VARCHAR(20)
 );
 
 -- Sales TABLE
@@ -30,6 +31,7 @@ CREATE TABLE Weather (
     total_rain_mm DECIMAL(5,2),
     total_precip_mm DECIMAL(5,2),
     total_snow_mm DECIMAL(5,2),
+    temp_category VARCHAR(10),
 	FOREIGN KEY (date) REFERENCES Date(date)
 );
 

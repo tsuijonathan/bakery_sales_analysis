@@ -126,21 +126,52 @@ FROM Payments
 GROUP BY month
 ORDER BY month;
 
--- Deleted all rows before 2023-02-01 and all rows after 2024-11-30 as those months are not complete
-DELETE FROM Holiday
-WHERE date < '2023-02-01' OR date > '2024-11-30';
+-- Average sales by season
+SELECT d.season, AVG(s.net_sales) AS avg_daily_sales
+FROM Sales s
+JOIN dates d ON s.date = d.date
+GROUP BY d.season
+ORDER BY avg_daily_sales DESC;
 
-DELETE FROM Sales
-WHERE date < '2023-02-01' OR date > '2024-11-30';
+-- Sales on holidays by season
+SELECT 
+	d.season,
+	h.holiday_name,
+	SUM(s.net_sales) AS holiday_sales
+FROM Sales s
+JOIN Dates d ON s.date = d.date
+JOIN Holiday h ON s.date = h.date
+WHERE h.is_holiday = 1
+GROUP BY d.season, h.holiday_name
+ORDER BY holiday_sales DESC;
 
-DELETE FROM Weather
-WHERE date < '2023-02-01' OR date > '2024-11-30';
+-- Total sales by temperature category
+SELECT
+	w.temp_category,
+    SUM(s.net_sales) AS total_sales
+FROM Sales s
+JOIN Weather w ON s.date = w.date
+GROUP BY w.temp_category
+ORDER BY total_sales DESC;
 
-DELETE FROM Payments
-WHERE date < '2023-02-01' OR date > '2024-11-30';
+-- Average sales by temperature category
+SELECT
+	w.temp_category,
+    AVG(s.net_sales) AS total_sales
+FROM Sales s
+JOIN Weather w ON s.date = w.date
+GROUP BY w.temp_category
+ORDER BY total_sales DESC;
 
-DELETE FROM Dates
-WHERE date < '2023-02-01' OR date > '2024-11-30';
+-- Number of sales days by Temperature category
+SELECT w.temp_category, COUNT(*) AS number_of_days
+FROM Weather w
+GROUP BY w.temp_category
+ORDER BY number_of_days DESC;
+
+
+
+
 
 
 
