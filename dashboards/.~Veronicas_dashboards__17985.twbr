@@ -1,0 +1,1885 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='veronicas_cleaned_df' inline='true' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='veronicas_cleaned_df' name='textscan.02m8wid0gnubxk15kdlpz1cw6id0'>
+            <connection class='textscan' directory='/Users/jonathantsui/Desktop/Ironhack/labs/final_project/data/clean' filename='veronicas_cleaned_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02m8wid0gnubxk15kdlpz1cw6id0' name='veronicas_cleaned_df.csv' table='[veronicas_cleaned_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='day' ordinal='1' />
+            <column datatype='real' name='gross_sales' ordinal='2' />
+            <column datatype='real' name='returns' ordinal='3' />
+            <column datatype='real' name='discounts_comps' ordinal='4' />
+            <column datatype='real' name='net_sales' ordinal='5' />
+            <column datatype='real' name='gift_card_sales' ordinal='6' />
+            <column datatype='real' name='tax' ordinal='7' />
+            <column datatype='real' name='tip' ordinal='8' />
+            <column datatype='real' name='refunds_by_amount' ordinal='9' />
+            <column datatype='real' name='cash' ordinal='10' />
+            <column datatype='real' name='card' ordinal='11' />
+            <column datatype='real' name='gift_card' ordinal='12' />
+            <column datatype='real' name='fees' ordinal='13' />
+            <column datatype='integer' name='is_store_open' ordinal='14' />
+            <column datatype='real' name='mean_temp_c' ordinal='15' />
+            <column datatype='real' name='total_rain_mm' ordinal='16' />
+            <column datatype='real' name='total_precip_mm' ordinal='17' />
+            <column datatype='real' name='total_snow_mm' ordinal='18' />
+            <column datatype='string' name='holiday_name' ordinal='19' />
+            <column datatype='integer' name='is_holiday' ordinal='20' />
+            <column datatype='integer' name='is_holiday_prev_1' ordinal='21' />
+            <column datatype='integer' name='is_holiday_next_1' ordinal='22' />
+            <column datatype='integer' name='is_holiday_prev_2' ordinal='23' />
+            <column datatype='integer' name='is_holiday_next_2' ordinal='24' />
+            <column datatype='string' name='temp_category' ordinal='25' />
+            <column datatype='string' name='season' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gross_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_sales]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>gross_sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returns</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returns]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>returns</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discounts_comps</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[discounts_comps]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>discounts_comps</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_sales]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>net_sales</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gift_card_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gift_card_sales]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>gift_card_sales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tax]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>tax</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tip]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>tip</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refunds_by_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[refunds_by_amount]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>refunds_by_amount</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cash]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>cash</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>card</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[card]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>card</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gift_card</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gift_card]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>gift_card</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fees]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>fees</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_store_open</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_store_open]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_store_open</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_temp_c</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_temp_c]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>mean_temp_c</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rain_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rain_mm]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>total_rain_mm</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_precip_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_precip_mm]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>total_precip_mm</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_snow_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_snow_mm]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>total_snow_mm</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>holiday_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[holiday_name]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>holiday_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_holiday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_holiday]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_holiday</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_holiday_prev_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_holiday_prev_1]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_holiday_prev_1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_holiday_next_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_holiday_next_1]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_holiday_next_1</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_holiday_prev_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_holiday_prev_2]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_holiday_prev_2</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_holiday_next_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_holiday_next_2]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>is_holiday_next_2</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temp_category]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>temp_category</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[veronicas_cleaned_df.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334269954:qk]&quot;' value='By Card' />
+          <alias key='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334462467:qk]&quot;' value='By Cash' />
+          <alias key='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334532100:qk]&quot;' value='By Gift Card' />
+        </aliases>
+      </column>
+      <column caption='Month' datatype='string' name='[Calculation_1003387949331865601]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;month&apos;, [date])' />
+      </column>
+      <column caption='Card Sales Percentage' datatype='real' datatype-customized='true' default-format='p0.0%' name='[Calculation_1003387949334269954]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([card]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+      </column>
+      <column caption='Cash Sales Percentage' datatype='real' default-format='p0.0%' name='[Calculation_1003387949334462467]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([cash]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+      </column>
+      <column caption='Gift Card Sales Percentage' datatype='real' default-format='p0.0%' name='[Calculation_1003387949334532100]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([gift_card]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+      </column>
+      <column caption='gift card sales percentage' datatype='real' name='[Calculation_1098878335213142016]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([gift_card]) / SUM([net_sales])' />
+      </column>
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[Calculation_1184657834400739328]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='YEAR([date])' />
+      </column>
+      <column caption='Year-Month' datatype='string' name='[Calculation_1184657834401181697]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(YEAR([date])) + &quot;-&quot; + RIGHT(&quot;0&quot; + STR(MONTH([date])), 2)' />
+      </column>
+      <column caption='MoM Growth Rate' datatype='real' default-format='p0.00%' name='[Calculation_1184657834401345538]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ISNULL(LOOKUP(SUM([net_sales]), -1)) THEN&#10;    0&#10;ELSE&#10;    (SUM([net_sales]) - LOOKUP(SUM([net_sales]), -1)) / LOOKUP(SUM([net_sales]), -1)&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Holiday Sales Percentage' datatype='real' name='[Calculation_1184657834406223875]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([net_sales]) / TOTAL(SUM([net_sales]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='veronicas_cleaned_df.csv' datatype='table' name='[__tableau_internal_object_id__].[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]' role='measure' type='quantitative' />
+      <column caption='Card' datatype='real' name='[card]' role='measure' type='quantitative' />
+      <column caption='Cash' datatype='real' name='[cash]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day' datatype='string' name='[day]' role='dimension' type='nominal' />
+      <column caption='Discounts Comps' datatype='real' name='[discounts_comps]' role='measure' type='quantitative' />
+      <column caption='Fees' datatype='real' name='[fees]' role='measure' type='quantitative' />
+      <column caption='Gift Card' datatype='real' name='[gift_card]' role='measure' type='quantitative' />
+      <column caption='Gift Card Sales' datatype='real' name='[gift_card_sales]' role='measure' type='quantitative' />
+      <column caption='Gross Sales' datatype='real' name='[gross_sales]' role='measure' type='quantitative' />
+      <column caption='Holiday Name' datatype='string' name='[holiday_name]' role='dimension' type='nominal' />
+      <column caption='Is Holiday' datatype='integer' datatype-customized='true' name='[is_holiday]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='Regular Day' />
+          <alias key='1' value='Holiday' />
+        </aliases>
+      </column>
+      <column caption='Is Holiday Next 1' datatype='integer' name='[is_holiday_next_1]' role='measure' type='quantitative' />
+      <column caption='Is Holiday Next 2' datatype='integer' name='[is_holiday_next_2]' role='measure' type='quantitative' />
+      <column caption='Is Holiday Prev 1' datatype='integer' name='[is_holiday_prev_1]' role='measure' type='quantitative' />
+      <column caption='Is Holiday Prev 2' datatype='integer' name='[is_holiday_prev_2]' role='measure' type='quantitative' />
+      <column caption='Is Store Open' datatype='integer' name='[is_store_open]' role='measure' type='quantitative' />
+      <column caption='Mean Temp C' datatype='real' name='[mean_temp_c]' role='measure' type='quantitative' />
+      <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+      <column caption='Refunds By Amount' datatype='real' name='[refunds_by_amount]' role='measure' type='quantitative' />
+      <column caption='Returns' datatype='real' name='[returns]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Tax' datatype='real' name='[tax]' role='measure' type='quantitative' />
+      <column caption='Temp Category' datatype='string' name='[temp_category]' role='dimension' type='nominal' />
+      <column caption='Tip' datatype='real' name='[tip]' role='measure' type='quantitative' />
+      <column caption='Total Precip Mm' datatype='real' name='[total_precip_mm]' role='measure' type='quantitative' />
+      <column caption='Total Rain Mm' datatype='real' name='[total_rain_mm]' role='measure' type='quantitative' />
+      <column caption='Total Snow Mm' datatype='real' name='[total_snow_mm]' role='measure' type='quantitative' />
+      <column-instance column='[gift_card_sales]' derivation='Avg' name='[avg:gift_card_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tip]' derivation='Avg' name='[avg:tip:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_temp_c]' derivation='Count' name='[cnt:mean_temp_c:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday]' derivation='CountD' name='[ctd:is_holiday:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_temp_c]' derivation='CountD' name='[ctd:mean_temp_c:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[net_sales]' derivation='Median' name='[med:net_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday]' derivation='None' name='[none:is_holiday:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[card]' derivation='Sum' name='[sum:card:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cash]' derivation='Sum' name='[sum:cash:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[discounts_comps]' derivation='Sum' name='[sum:discounts_comps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fees]' derivation='Sum' name='[sum:fees:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gift_card]' derivation='Sum' name='[sum:gift_card:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gift_card_sales]' derivation='Sum' name='[sum:gift_card_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gross_sales]' derivation='Sum' name='[sum:gross_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday]' derivation='Sum' name='[sum:is_holiday:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday_next_1]' derivation='Sum' name='[sum:is_holiday_next_1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday_next_2]' derivation='Sum' name='[sum:is_holiday_next_2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday_prev_1]' derivation='Sum' name='[sum:is_holiday_prev_1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_holiday_prev_2]' derivation='Sum' name='[sum:is_holiday_prev_2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_store_open]' derivation='Sum' name='[sum:is_store_open:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean_temp_c]' derivation='Sum' name='[sum:mean_temp_c:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[net_sales]' derivation='Sum' name='[sum:net_sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[refunds_by_amount]' derivation='Sum' name='[sum:refunds_by_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[returns]' derivation='Sum' name='[sum:returns:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1003387949334269954]' derivation='User' name='[usr:Calculation_1003387949334269954:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1003387949334462467]' derivation='User' name='[usr:Calculation_1003387949334462467:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1003387949334532100]' derivation='User' name='[usr:Calculation_1003387949334532100:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/hh/hx7f_d913pbf5gbc452qrps00000gp/T/tableau-temp/#TableauTemp_1ezu0r31936dk413nkd6b0ymilnf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/17/2024 08:44:38 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>669</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day</remote-alias>
+              <ordinal>1</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gross_sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gross_sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gross_sales</remote-alias>
+              <ordinal>2</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>610</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returns</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returns]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returns</remote-alias>
+              <ordinal>3</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>discounts_comps</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[discounts_comps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>discounts_comps</remote-alias>
+              <ordinal>4</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>579</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_sales</remote-alias>
+              <ordinal>5</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>610</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gift_card_sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gift_card_sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gift_card_sales</remote-alias>
+              <ordinal>6</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tax</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tax]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tax</remote-alias>
+              <ordinal>7</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>594</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tip</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tip</remote-alias>
+              <ordinal>8</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>587</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refunds_by_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[refunds_by_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refunds_by_amount</remote-alias>
+              <ordinal>9</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash</remote-alias>
+              <ordinal>10</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>578</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>card</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[card]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>card</remote-alias>
+              <ordinal>11</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>609</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gift_card</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gift_card]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gift_card</remote-alias>
+              <ordinal>12</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>229</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fees</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fees</remote-alias>
+              <ordinal>13</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>587</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_store_open</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_store_open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_store_open</remote-alias>
+              <ordinal>14</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mean_temp_c</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mean_temp_c]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mean_temp_c</remote-alias>
+              <ordinal>15</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_rain_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_rain_mm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_rain_mm</remote-alias>
+              <ordinal>16</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_precip_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_precip_mm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_precip_mm</remote-alias>
+              <ordinal>17</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_snow_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_snow_mm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_snow_mm</remote-alias>
+              <ordinal>18</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>holiday_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[holiday_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>holiday_name</remote-alias>
+              <ordinal>19</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_holiday</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_holiday]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_holiday</remote-alias>
+              <ordinal>20</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_holiday_prev_1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_holiday_prev_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_holiday_prev_1</remote-alias>
+              <ordinal>21</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_holiday_next_1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_holiday_next_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_holiday_next_1</remote-alias>
+              <ordinal>22</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_holiday_prev_2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_holiday_prev_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_holiday_prev_2</remote-alias>
+              <ordinal>23</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_holiday_next_2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_holiday_next_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_holiday_next_2</remote-alias>
+              <ordinal>24</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temp_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[temp_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temp_category</remote-alias>
+              <ordinal>25</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season</remote-alias>
+              <ordinal>26</ordinal>
+              <family>veronicas_cleaned_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='red_gold_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:card:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:discounts_comps:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_holiday_next_2:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:gross_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:fees:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:refunds_by_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[cnt:mean_temp_c:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[ctd:mean_temp_c:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:mean_temp_c:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:gift_card:qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:tip:qk]&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334269954:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_holiday_prev_1:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_holiday_prev_2:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:net_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:returns:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[ctd:is_holiday:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_holiday:qk]&quot;</bucket>
+            </map>
+            <map to='#ee734a'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334532100:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:gift_card_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:gift_card_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:cash:qk]&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[med:net_sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334462467:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_store_open:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[sum:is_holiday_next_1:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:is_holiday:ok]' palette='red_gold_10_0' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='Calculation_1184657834401181697' />
+        <field-sort-custom-order field='Calculation_1184657834400739328' />
+        <field-sort-custom-order field='Calculation_1003387949331865601' />
+        <field-sort-custom-order field='day' />
+        <field-sort-custom-order field='gross_sales' />
+        <field-sort-custom-order field='returns' />
+        <field-sort-custom-order field='discounts_comps' />
+        <field-sort-custom-order field='net_sales' />
+        <field-sort-custom-order field='gift_card_sales' />
+        <field-sort-custom-order field='Calculation_1098878335213142016' />
+        <field-sort-custom-order field='tax' />
+        <field-sort-custom-order field='tip' />
+        <field-sort-custom-order field='refunds_by_amount' />
+        <field-sort-custom-order field='cash' />
+        <field-sort-custom-order field='Calculation_1003387949334462467' />
+        <field-sort-custom-order field='card' />
+        <field-sort-custom-order field='Calculation_1003387949334269954' />
+        <field-sort-custom-order field='gift_card' />
+        <field-sort-custom-order field='Calculation_1003387949334532100' />
+        <field-sort-custom-order field='fees' />
+        <field-sort-custom-order field='is_store_open' />
+        <field-sort-custom-order field='mean_temp_c' />
+        <field-sort-custom-order field='total_rain_mm' />
+        <field-sort-custom-order field='total_precip_mm' />
+        <field-sort-custom-order field='total_snow_mm' />
+        <field-sort-custom-order field='holiday_name' />
+        <field-sort-custom-order field='is_holiday' />
+        <field-sort-custom-order field='is_holiday_prev_1' />
+        <field-sort-custom-order field='is_holiday_next_1' />
+        <field-sort-custom-order field='is_holiday_prev_2' />
+        <field-sort-custom-order field='is_holiday_next_2' />
+        <field-sort-custom-order field='temp_category' />
+        <field-sort-custom-order field='season' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='veronicas_cleaned_df.csv' id='veronicas_cleaned_df.csv_65990D1FD53D43D6AA46D194364B05E0'>
+            <properties context=''>
+              <relation connection='textscan.02m8wid0gnubxk15kdlpz1cw6id0' name='veronicas_cleaned_df.csv' table='[veronicas_cleaned_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='day' ordinal='1' />
+                  <column datatype='real' name='gross_sales' ordinal='2' />
+                  <column datatype='real' name='returns' ordinal='3' />
+                  <column datatype='real' name='discounts_comps' ordinal='4' />
+                  <column datatype='real' name='net_sales' ordinal='5' />
+                  <column datatype='real' name='gift_card_sales' ordinal='6' />
+                  <column datatype='real' name='tax' ordinal='7' />
+                  <column datatype='real' name='tip' ordinal='8' />
+                  <column datatype='real' name='refunds_by_amount' ordinal='9' />
+                  <column datatype='real' name='cash' ordinal='10' />
+                  <column datatype='real' name='card' ordinal='11' />
+                  <column datatype='real' name='gift_card' ordinal='12' />
+                  <column datatype='real' name='fees' ordinal='13' />
+                  <column datatype='integer' name='is_store_open' ordinal='14' />
+                  <column datatype='real' name='mean_temp_c' ordinal='15' />
+                  <column datatype='real' name='total_rain_mm' ordinal='16' />
+                  <column datatype='real' name='total_precip_mm' ordinal='17' />
+                  <column datatype='real' name='total_snow_mm' ordinal='18' />
+                  <column datatype='string' name='holiday_name' ordinal='19' />
+                  <column datatype='integer' name='is_holiday' ordinal='20' />
+                  <column datatype='integer' name='is_holiday_prev_1' ordinal='21' />
+                  <column datatype='integer' name='is_holiday_next_1' ordinal='22' />
+                  <column datatype='integer' name='is_holiday_prev_2' ordinal='23' />
+                  <column datatype='integer' name='is_holiday_next_2' ordinal='24' />
+                  <column datatype='string' name='temp_category' ordinal='25' />
+                  <column datatype='string' name='season' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='GC'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Gift Card Sales per Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column caption='Month' datatype='string' name='[Calculation_1003387949331865601]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;month&apos;, [date])' />
+            </column>
+            <column-instance column='[gift_card_sales]' derivation='Avg' name='[avg:gift_card_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Gift Card Sales' datatype='real' name='[gift_card_sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1003387949331865601]' derivation='None' name='[none:Calculation_1003387949331865601:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:gift_card_sales:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:Calculation_1003387949331865601:nk]</cols>
+      </table>
+      <simple-id uuid='{703D9A73-B815-40B1-9AFA-54AC67A410F7}' />
+    </worksheet>
+    <worksheet name='Holiday'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sales Non-Holiday vs. Holiday</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Is Holiday' datatype='integer' datatype-customized='true' name='[is_holiday]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='Regular Day' />
+                <alias key='1' value='Holiday' />
+              </aliases>
+            </column>
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[is_holiday]' derivation='None' name='[none:is_holiday:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:is_holiday:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:is_holiday:ok]</cols>
+      </table>
+      <simple-id uuid='{E8D22220-28EB-46D0-B92C-18D36A5FA03E}' />
+    </worksheet>
+    <worksheet name='Payments'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Customer Payment Methods</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column caption='Card Sales Percentage' datatype='real' datatype-customized='true' default-format='p0.0%' name='[Calculation_1003387949334269954]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([card]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+            </column>
+            <column caption='Cash Sales Percentage' datatype='real' default-format='p0.0%' name='[Calculation_1003387949334462467]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([cash]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+            </column>
+            <column caption='Gift Card Sales Percentage' datatype='real' default-format='p0.0%' name='[Calculation_1003387949334532100]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([gift_card]) / (SUM([card]) + SUM([cash]) + SUM([gift_card]))' />
+            </column>
+            <column caption='Card' datatype='real' name='[card]' role='measure' type='quantitative' />
+            <column caption='Cash' datatype='real' name='[cash]' role='measure' type='quantitative' />
+            <column caption='Gift Card' datatype='real' name='[gift_card]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1003387949334269954]' derivation='User' name='[usr:Calculation_1003387949334269954:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1003387949334462467]' derivation='User' name='[usr:Calculation_1003387949334462467:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1003387949334532100]' derivation='User' name='[usr:Calculation_1003387949334532100:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334269954:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334462467:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334532100:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='752' />
+            <format attr='cell-h' value='752' />
+            <format attr='cell' value='94' />
+            <format attr='cell-q' value='470' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+              <size column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[Multiple Values]' />
+              <text column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+              <text column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[Multiple Values]' />
+              <lod column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-color' value='#e6130c' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]</field>
+                  <field>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334462467:qk]&quot;</value>
+                <value>0.082614769038119262</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-16' y='19' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]</field>
+                  <field>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1003387949334532100:qk]&quot;</value>
+                <value>0.0037258945236820417</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='23' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{706980E6-267A-4BC0-B490-C2D7F4A02E45}' />
+    </worksheet>
+    <worksheet name='Sales/Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sales by Day of the Week</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Day' datatype='string' name='[day]' role='dimension' type='nominal' />
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[day]' derivation='None' name='[none:day:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:day:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Monday&quot;</bucket>
+              <bucket>&quot;Tuesday&quot;</bucket>
+              <bucket>&quot;Wednesday&quot;</bucket>
+              <bucket>&quot;Thursday&quot;</bucket>
+              <bucket>&quot;Friday&quot;</bucket>
+              <bucket>&quot;Saturday&quot;</bucket>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:day:nk]</cols>
+      </table>
+      <simple-id uuid='{E255FC79-4BFD-4E88-88B7-ADC9DFFA6971}' />
+    </worksheet>
+    <worksheet name='Sales/Month+Tips'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sales per Month with Average Tips (6.75%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column caption='Month' datatype='string' name='[Calculation_1003387949331865601]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;month&apos;, [date])' />
+            </column>
+            <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tip]' derivation='Avg' name='[avg:tip:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1003387949331865601]' derivation='None' name='[none:Calculation_1003387949331865601:nk]' pivot='key' type='nominal' />
+            <column caption='Tip' datatype='real' name='[tip]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:tip:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:tip:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e6130c' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk] + [federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:tip:qk])</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:Calculation_1003387949331865601:nk]</cols>
+      </table>
+      <simple-id uuid='{3C8014B8-E245-46A0-B34C-0DA611878F7D}' />
+    </worksheet>
+    <worksheet name='SalesM0M'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sales Growth Rate (Month-over-Month)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column caption='Year-Month' datatype='string' name='[Calculation_1184657834401181697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(YEAR([date])) + &quot;-&quot; + RIGHT(&quot;0&quot; + STR(MONTH([date])), 2)' />
+            </column>
+            <column caption='MoM Growth Rate' datatype='real' default-format='p0.00%' name='[Calculation_1184657834401345538]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL(LOOKUP(SUM([net_sales]), -1)) THEN&#10;    0&#10;ELSE&#10;    (SUM([net_sales]) - LOOKUP(SUM([net_sales]), -1)) / LOOKUP(SUM([net_sales]), -1)&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1184657834401181697]' derivation='None' name='[none:Calculation_1184657834401181697:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1184657834401345538]' derivation='User' name='[usr:Calculation_1184657834401345538:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:Calculation_1184657834401181697:nk]</cols>
+      </table>
+      <simple-id uuid='{95E93674-293D-49B9-A247-9F96E2E79AC4}' />
+    </worksheet>
+    <worksheet name='Season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sales by Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:season:nk]</cols>
+      </table>
+      <simple-id uuid='{121A392A-511E-49C3-9F7F-6D22A1448413}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0918B38D-F7FD-4138-9A29-774E85407C6F}' />
+    </worksheet>
+    <worksheet name='Temperature'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Sales by Temperature</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='veronicas_cleaned_df' name='federated.1b0nxao0z3w9sk1epa4qr1bhw27c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0nxao0z3w9sk1epa4qr1bhw27c'>
+            <column-instance column='[net_sales]' derivation='Avg' name='[avg:net_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+            <column-instance column='[temp_category]' derivation='None' name='[none:temp_category:nk]' pivot='key' type='nominal' />
+            <column caption='Temp Category' datatype='string' name='[temp_category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]'>
+            <groupfilter function='level-members' level='[none:temp_category:nk]' />
+          </filter>
+          <manual-sort column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Cold&quot;</bucket>
+              <bucket>&quot;Cool&quot;</bucket>
+              <bucket>&quot;Comfortable&quot;</bucket>
+              <bucket>&quot;Hot&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e6130c' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[avg:net_sales:qk]</rows>
+        <cols>[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]</cols>
+      </table>
+      <simple-id uuid='{19C250E0-28CF-4738-91A7-3DBFCB2A3E38}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sales/Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{7CA0A749-6A2A-444B-A966-87A8AE4442F6}' />
+    </window>
+    <window class='worksheet' name='Sales/Month+Tips'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B8C05CA-148B-4FCB-A9EA-0CDCF2D5F106}' />
+    </window>
+    <window class='worksheet' name='Payments'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[Multiple Values]' type='size' />
+            <card pane-specification-id='0' param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{5E5B5E94-61AD-4653-9715-DAB021FC3228}' />
+    </window>
+    <window class='worksheet' name='GC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{47FBD271-17B6-425A-BC45-ECA7129943E5}' />
+    </window>
+    <window class='worksheet' name='Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D3C8A4B-AF47-4E1C-82F5-5179C2F8D2D7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Holiday'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:is_holiday:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84E4C143-8630-44BE-BD1E-4668379AAF9A}' />
+    </window>
+    <window class='worksheet' name='Temperature'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[none:temp_category:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4806FDF8-A23C-45F2-AF6D-5FEC11F3E3B6}' />
+    </window>
+    <window class='worksheet' name='SalesM0M'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b0nxao0z3w9sk1epa4qr1bhw27c].[usr:Calculation_1184657834401345538:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5B4DD2E-C54D-4842-8CED-6A231232B345}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9AD2D6AC-FF0B-4004-AF45-56C562CE6E13}' />
+    </window>
+  </windows>
+</workbook>
