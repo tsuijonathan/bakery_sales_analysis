@@ -124,13 +124,13 @@ As a former chef and baker, making decisions about **staffing** and **food prepa
 
 4. **Statistical Tests**
 
-| **Hypothesis**                | **Test**       | **p-Value**  | **Conclusion**            |
-|-------------------------------|----------------|--------------|---------------------------|
-| **Sales by Day of the Week**  | ANOVA          | 5.99e-91     | ✅ Significant Difference |
-| **Rainy vs. Non-Rainy Days**  | Mann-Whitney U | 0.7983       | ❌ No Difference          |
-| **Snowy vs. Non-Snowy Days**  | t-test         | 0.02895      | ✅ Significant Difference |
-| **Holidays vs. Non-Holidays** | Mann-Whitney U | 0.02177      | ✅ Significant Difference |
-| **Sales Across Seasons**      | Kruskal-Wallis | 0.06363      | ❌ No Difference          |
+| **Hypothesis**                | **Test**       | **p-Value**  | **Conclusion**              |
+|-------------------------------|----------------|--------------|---------------------------  |
+| **Sales by Day of the Week**  | ANOVA          | 5.99e-91     | ✅ Significant Difference   |
+| **Rainy vs. Non-Rainy Days**  | Mann-Whitney U | 0.7983       | ❌ No Significant Difference|
+| **Snowy vs. Non-Snowy Days**  | t-test         | 0.02895      | ✅ Significant Difference   |
+| **Holidays vs. Non-Holidays** | Mann-Whitney U | 0.02177      | ✅ Significant Difference   |
+| **Sales Across Seasons**      | Kruskal-Wallis | 0.06363      | ❌ No Significant Difference|
 
 ---
 
