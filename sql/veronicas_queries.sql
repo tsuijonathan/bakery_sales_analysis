@@ -10,6 +10,10 @@ FROM Sales;
 SELECT COUNT(*) FROM Sales;
 SELECT COUNT(*) FROM Weather;
 
+-- Total Sales 
+SELECT SUM(net_sales) AS total_sales
+FROM Sales;
+
 -- Total Sales by Month
 SELECT 
 DATE_FORMAT(date, '%Y-%m') AS month,
@@ -169,7 +173,15 @@ FROM Weather w
 GROUP BY w.temp_category
 ORDER BY number_of_days DESC;
 
+-- Total number of rainy days
+SELECT COUNT(date) 
+FROM Weather
+WHERE total_rain_mm > 0;
 
+-- Total number of snowy days
+SELECT COUNT(date)
+FROM Weather
+WHERE total_snow_mm > 0;
 
 
 
