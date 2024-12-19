@@ -2,7 +2,7 @@
 
 ## **Business Description**
 
-Veronica's Bakery and Pasta Shop based on a real brick-and-mortar bakery located in a Canadian city with a population of 785,000. The shop offers a variety of products, including:
+Veronica's Bakery and Pasta Shop is based on a real brick-and-mortar bakery located in a Canadian city with a population of 785,000. The shop offers a variety of products, including:
 
 - **Breads and Pastries**: Freshly baked daily.  
 - **Sandwiches and Coffee**: Available for dine-in or takeaway.  
@@ -108,8 +108,8 @@ As a former chef and baker, making decisions about **staffing** and **food prepa
 ### **Brief Summary of Key Findings:**
 
 1. **Customer Behavior**:  
-   - **Highest Sales**: Fridays and Saturdays.  
-   - **Lowest Sales**: Mondays and Tuesdays.  
+   - **Highest Sales**: Fridays and Saturdays | November and December.
+   - **Lowest Sales**: Mondays and Tuesdays | February and March.  
    - **Gift Card Sales** peak in **November and December**.
 
 2. **Weather Impact**:  
@@ -122,7 +122,21 @@ As a former chef and baker, making decisions about **staffing** and **food prepa
    - Sales rebound **two days after holidays**.  
    - **Good Friday** has the highest average sales.
 
-4. **Model Performance**:  
+4. **Statistical Tests**
+
+| **Hypothesis**                | **Test**       | **p-Value**  | **Conclusion**            |
+|-------------------------------|----------------|--------------|---------------------------|
+| **Sales by Day of the Week**  | ANOVA          | 5.99e-91     | ✅ Significant Difference |
+| **Rainy vs. Non-Rainy Days**  | Mann-Whitney U | 0.7983       | ❌ No Difference          |
+| **Snowy vs. Non-Snowy Days**  | t-test         | 0.02895      | ✅ Significant Difference |
+| **Holidays vs. Non-Holidays** | Mann-Whitney U | 0.02177      | ✅ Significant Difference |
+| **Sales Across Seasons**      | Kruskal-Wallis | 0.06363      | ❌ No Difference          |
+
+---
+
+These findings highlight the **significant patterns** in sales behavior based on days of the week, holidays, and weather conditions. They provide a solid foundation for the recommendations aimed at optimizing **staffing, inventory planning, and promotions**.
+
+5. **Model Performance**:  
    - **Linear Regression**:  
      - **MSE**: 1,120,112.41 | **R²**: 50.2%  
    - **Gradient Boosting**:  
@@ -135,15 +149,15 @@ As a former chef and baker, making decisions about **staffing** and **food prepa
 3. **Weather-Specific Strategies**: Adjust offerings based on temperature and weather patterns.  
 4. **Cost-Benefit Analysis**: Evaluate the profitability of opening on holidays.  
 5. **Enhanced Data Collection**: Improve the POS system to track more detailed data.  
-6. **Customer Insights App**: Develop a loyalty app to gather customer behavior data.
+6. **Customer Insights App**: Develop a loyalty app or membership card program to gather customer behaviour data.
 
-## **How to Navigate Through the Project**
+## **How to Navigate Through the Project Files**
 
-1. **Data Files**: Contains cleaned datasets used for analysis.  
-2. **SQL**: Schema and queries for database creation and management.  
-3. **Jupyter Notebooks**: Code for data cleaning, EDA, statistical tests, and model building.  
+1. **Data**: Contains cleaned datasets used for analysis.  
+2. **SQL**: Entity Relationship Diagram (ERD) diagram. Schema and queries for database creation and management.  
+3. **Notebooks**: Code for data cleaning, EDA, statistical tests, and model building.  
 4. **Dashboards**: Tableau workbooks for interactive visualizations.  
-6. **Figures**: Plots created on Python and ERD diagram.
+6. **Figures**: Plots created on Python.
 5. **Presentation Slides**: Summary of findings and recommendations.
 
 ## **Links**
