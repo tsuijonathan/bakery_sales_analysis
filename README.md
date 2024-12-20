@@ -167,7 +167,3 @@ These findings highlight the **significant patterns** in sales behavior based on
 - **Sales Insights**: [View Dashboard](https://public.tableau.com/app/profile/jonathan.tsui8842/viz/Veronicas_dashboards/Insights?publish=yes)  
 - **Holiday and Weather Trends**: [View Dashboard](https://public.tableau.com/app/profile/jonathan.tsui8842/viz/Veronicas_dashboards/Trends?publish=yes)  
 - **Key Performance Indicators**: [View Dashboard](https://public.tableau.com/app/profile/jonathan.tsui8842/viz/Veronicas_dashboards/KPI?publish=yes)  
-
-### **Presentation Slides**
-
-- **Canva Presentation**: [View Slides](https://www.canva.com/design/DAGY4JwLixI/NAUGFlzB71_zhHyAeLsrAw/edit?utm_content=DAGY4JwLixI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
