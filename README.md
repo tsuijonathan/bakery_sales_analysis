@@ -142,14 +142,90 @@ These findings highlight the **significant patterns** in sales behavior based on
    - **Gradient Boosting**:  
      - **MSE**: 1,172,775.89 | **R²**: 47.9%
 
-## **Recommendations**
+## **Actionable Recommendations**:
 
-1. **Daily Sales Targets**: Aim for a benchmark of **$3,125.42** in daily sales.  
-2. **Promotions and Discounts**: Offer specials on **Mondays and Tuesdays** and **February and March** and around holidays.  
-3. **Weather-Specific Strategies**: Adjust offerings based on temperature and weather patterns.  
-4. **Cost-Benefit Analysis**: Evaluate the profitability of opening on holidays.  
-5. **Enhanced Data Collection**: Improve the POS system to track more detailed data.  
-6. **Customer Insights App**: Develop a loyalty app or membership card program to gather customer behaviour data.
+### 1. Daily Sales Targets
+- **Benchmark Goal:** Aim for a daily sales target of **$3,125.42**. This target serves as a benchmark to evaluate performance, optimize staffing, and allocate resources effectively.
+- **Dynamic Adjustments:** Incorporate variability in targets based on historical trends and seasonality to refine performance metrics.
+
+#### Upselling and Product Recommendation Strategies
+To meet daily sales targets, implement strategies to increase the average transaction value and frequency of purchases:
+
+- **Premium Options:**
+  - Offer premium versions of popular items, such as artisanal bread, specialty coffee roasts, or deluxe sandwich options.
+  - Highlight premium items on menus, counters, or digital boards with enticing descriptions and imagery.
+
+- **Bundling Discounts:**
+  - Create product bundles (e.g., coffee + pastry, pasta + gourmet pantry item) at a slight discount to encourage customers to spend more.
+  - Promote the bundles with labels like "Customer Favorites" or "Best Value."
+
+- **Suggestive Selling at Checkout:**
+  - Train staff to suggest add-ons like desserts, beverages, or gift items during transactions.
+  - Use point-of-sale (POS) prompts to recommend add-ons automatically (e.g., "Would you like to add a croissant to your coffee for $2 more?").
+
+- **Seasonal Upsells:**
+  - Leverage seasonal items (e.g., pumpkin spice lattes, holiday-themed baked goods) and limited-time offers to create urgency and increase sales.
+
+---
+
+### 2. **Promotions and Discounts**
+- **Day-Specific Promotions:** Offer special discounts or promotions on **Mondays and Tuesdays**, days with typically lower foot traffic, to attract more customers.
+- **Seasonal Campaigns:** Focus marketing efforts on **February and March**, historically slower months, by introducing seasonal products or offering discounts on popular items.
+- **Holiday Specials:** Align promotions around holidays to leverage increased consumer spending and festive demand.
+
+---
+
+### 3.**Weather-Specific Strategies**
+- **Menu Adjustments:** Adapt offerings based on weather patterns (e.g., soups and hot drinks on colder days; iced beverages and light meals during hot weather).
+- **Promotional Messaging:** Tailor marketing communications to weather conditions to create timely and relevant engagement.
+- **Stock Optimization:** Use weather forecasts to adjust inventory levels, reducing waste and ensuring popular items are in stock.
+
+---
+
+### 4. **Holiday Rebound Strategy**
+- **Post-Holiday Boost:** Develop a strategy to maximize the sales increase typically observed **two days after holidays**, referred to as the "holiday rebound."
+  - **Limited-Time Offers:** Create post-holiday exclusive discounts to entice repeat visits.
+  - **Gift Card Promotions:** Promote the use of gift cards purchased during the holidays to drive foot traffic.
+  - **Upselling and Cross-Selling:** Leverage post-holiday high traffic to introduce new items or upsell premium products.
+
+---
+
+### 5. **Cost-Benefit Analysis**
+- **Holiday Operations:** Conduct a profitability analysis for opening on holidays, factoring in labor costs, potential sales, and operational overhead.
+- **Scenario Planning:** Simulate scenarios for holiday sales performance to make data-driven decisions on whether to open or close during holidays.
+
+---
+
+### 6. **Enhance Data Collection**
+#### Improve POS System:
+- **Itemized Sales Data:** Collect detailed data on every item sold, including quantities, categories, and timestamps, to enable market basket analysis and understand purchasing patterns.
+- **Customer Purchase History:** Integrate customer-level purchase tracking, linking transactions to loyalty accounts or membership cards.
+- **Category Trends:** Analyze sales by product category (e.g., baked goods, pasta, coffee, etc.) to optimize inventory and forecast demand.
+- **Time-Based Trends:** Collect hourly sales data to identify peak periods and allocate staffing more efficiently.
+- **Discount Effectiveness:** Track the performance of specific promotions and discounts by measuring lift in sales.
+
+#### Customer Insights App:
+- **Demographics:** Gather data on customer age, gender, income levels, and other key demographics for targeted marketing.
+- **Visit Frequency:** Track how often customers visit, purchase amounts per visit, and trends in repeat purchases.
+- **Feedback and Preferences:** Collect direct customer feedback on products, promotions, and service quality through surveys or app interactions.
+- **Engagement Metrics:** Monitor app usage, response to push notifications, and reward redemptions for insights into customer behavior.
+- **Referral Data:** Capture details on referral patterns to understand word-of-mouth impact.
+
+---
+
+### 7. **Market Basket Analysis**
+- **Objective:** Use enhanced POS data to identify product combinations frequently purchased together (e.g., coffee and pastries) to develop bundling strategies.
+- **Cross-Selling Opportunities:** Design marketing campaigns or point-of-sale suggestions to encourage complementary purchases based on analysis results.
+
+---
+
+### 8. **Customer Loyalty and Behavior Insights**
+#### Loyalty Program Implementation:
+- Offer loyalty points or rewards to encourage repeat visits and collect detailed data on purchasing behavior.
+- Analyze the impact of loyalty incentives on revenue and customer retention.
+
+#### Personalized Marketing:
+- Use collected customer data to tailor promotions, product recommendations, and communication for a more personalized customer experience.
 
 ## **How to Navigate Through the Project Files**
 
