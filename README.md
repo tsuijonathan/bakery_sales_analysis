@@ -21,8 +21,8 @@ This project focuses on helping Veronica's Bakery enhance **revenue** and **oper
 - [Process](#process)
 - [Tools Used](#tools-used)
 - [Results](#results)
-- [Recommendations](#recommendations)
-- [How to Navigate Through the Project](#how-to-navigate-through-the-project)
+- [Recommendations](#actionable-recommendations)
+- [How to Navigate Through the Project Files](#how-to-navigate-through-the-project-files)
 - [Links](#links)
 
 ## **Business Problem**
