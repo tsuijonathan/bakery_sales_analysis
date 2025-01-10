@@ -53,6 +53,7 @@ As a former chef and baker, making decisions about **staffing** and **food prepa
 
 3. **Relational Database Setup**  
    - Designed an ERD, created a MySQL schema, and implemented a relational database for organized data storage.
+   ![Sales Entity-Relationship Diagram](sql/veronicas_sales_ERD.png)
 
 4. **Exploratory Data Analysis (EDA)**  
    - Identified patterns and trends in the data using visualizations.
